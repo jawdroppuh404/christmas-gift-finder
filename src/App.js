@@ -867,18 +867,25 @@ const GiftFinderApp = () => {
         >
           {products.map((product, idx) => (
             <div key={idx} className="flex-shrink-0 w-64 bg-white rounded-lg shadow-md p-4">
-              <div className="w-full h-48 bg-gradient-to-br from-amber-50 to-orange-100 rounded mb-3 flex items-center justify-center p-4 overflow-hidden">
+              <a
+                href={`https://www.amazon.com/dp/${product.asin}?tag=${AFFILIATE_TAG}`}
+                target="_blank"
+                rel="noopener noreferrer"
+                className="block w-full h-48 bg-gradient-to-br from-amber-50 to-orange-100 rounded mb-3 overflow-hidden"
+              >
                 {imageErrors[product.asin] ? (
-                  <Gift className="w-20 h-20 text-amber-600" />
+                  <div className="w-full h-full flex items-center justify-center">
+                    <Gift className="w-20 h-20 text-amber-600" />
+                  </div>
                 ) : (
                   <img
-                    src={`https://ws-na.amazon-adsystem.com/widgets/q?_encoding=UTF8&ASIN=${product.asin}&Format=_SL250_&ID=AsinImage&MarketPlace=US&ServiceVersion=20070822&WS=1&tag=${AFFILIATE_TAG}`}
+                    src={`https://images-na.ssl-images-amazon.com/images/P/${product.asin}.01.LZZZZZZZ.jpg`}
                     alt={product.name}
-                    className="max-w-full max-h-full object-contain"
+                    className="w-full h-full object-contain p-4"
                     onError={() => handleImageError(product.asin)}
                   />
                 )}
-              </div>
+              </a>
               <div className="mb-3">
                 <h3 className="font-semibold text-sm mb-1">{product.name}</h3>
                 <p className="text-green-600 font-bold text-lg">{product.price}</p>
