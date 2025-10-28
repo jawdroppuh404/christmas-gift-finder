@@ -835,6 +835,7 @@ const GiftFinderApp = () => {
 
   const ProductCarousel = ({ products }) => {
     const carouselRef = React.useRef(null);
+    const [imageErrors, setImageErrors] = React.useState({});
 
     const scroll = (direction) => {
       const container = carouselRef.current;
@@ -846,6 +847,10 @@ const GiftFinderApp = () => {
       }
     };
 
+    const handleImageError = (asin) => {
+      setImageErrors(prev => ({ ...prev, [asin]: true }));
+    };
+
     return (
       <div className="relative">
         <button
@@ -854,7 +859,7 @@ const GiftFinderApp = () => {
         >
           <ChevronLeft className="w-6 h-6" />
         </button>
-        
+
         <div
           ref={carouselRef}
           className="flex gap-4 overflow-x-auto scrollbar-hide px-12"
@@ -862,8 +867,17 @@ const GiftFinderApp = () => {
         >
           {products.map((product, idx) => (
             <div key={idx} className="flex-shrink-0 w-64 bg-white rounded-lg shadow-md p-4">
-              <div className="w-full h-48 bg-gradient-to-br from-amber-50 to-orange-100 rounded mb-3 flex items-center justify-center p-4">
-                <Gift className="w-20 h-20 text-amber-600" />
+              <div className="w-full h-48 bg-gradient-to-br from-amber-50 to-orange-100 rounded mb-3 flex items-center justify-center p-4 overflow-hidden">
+                {imageErrors[product.asin] ? (
+                  <Gift className="w-20 h-20 text-amber-600" />
+                ) : (
+                  <img
+                    src={`https://ws-na.amazon-adsystem.com/widgets/q?_encoding=UTF8&ASIN=${product.asin}&Format=_SL250_&ID=AsinImage&MarketPlace=US&ServiceVersion=20070822&WS=1&tag=${AFFILIATE_TAG}`}
+                    alt={product.name}
+                    className="max-w-full max-h-full object-contain"
+                    onError={() => handleImageError(product.asin)}
+                  />
+                )}
               </div>
               <div className="mb-3">
                 <h3 className="font-semibold text-sm mb-1">{product.name}</h3>
@@ -880,7 +894,7 @@ const GiftFinderApp = () => {
             </div>
           ))}
         </div>
-        
+
         <button
           onClick={() => scroll('right')}
           className="absolute right-0 top-1/2 -translate-y-1/2 z-10 bg-white rounded-full p-2 shadow-lg hover:bg-gray-100"
