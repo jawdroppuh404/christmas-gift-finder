@@ -2,8 +2,6 @@ import React, { useState, useEffect } from 'react';
 import { ChevronLeft, ChevronRight, Gift, ExternalLink } from 'lucide-react';
 
 const GiftFinderApp = () => {
-  const AFFILIATE_TAG = 'jwdrph-20';
-  
   const [currentQuestion, setCurrentQuestion] = useState(0);
   const [answers, setAnswers] = useState({});
   const [showResults, setShowResults] = useState(false);
@@ -868,7 +866,7 @@ const GiftFinderApp = () => {
           {products.map((product, idx) => (
             <div key={idx} className="flex-shrink-0 w-64 bg-white rounded-lg shadow-md p-4">
               <a
-                href={`https://www.amazon.com/dp/${product.asin}?tag=${AFFILIATE_TAG}`}
+                href={`https://www.amazon.com/dp/${product.asin}`}
                 target="_blank"
                 rel="noopener noreferrer"
                 className="block w-full h-48 bg-gradient-to-br from-amber-50 to-orange-100 rounded mb-3 overflow-hidden"
@@ -891,7 +889,7 @@ const GiftFinderApp = () => {
                 <p className="text-green-600 font-bold text-lg">{product.price}</p>
               </div>
               <a
-                href={`https://www.amazon.com/dp/${product.asin}?tag=${AFFILIATE_TAG}`}
+                href={`https://www.amazon.com/dp/${product.asin}`}
                 target="_blank"
                 rel="noopener noreferrer"
                 className="flex items-center justify-center gap-2 bg-amber-500 text-white px-4 py-2 rounded-lg hover:bg-amber-600 transition-colors text-sm font-medium w-full"
