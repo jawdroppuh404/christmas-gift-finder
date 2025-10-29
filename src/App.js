@@ -203,39 +203,39 @@ const GiftFinderApp = () => {
 
   const giftDatabase = {
   'reading-under25': [
-    { name: 'LED Neck Reading Light', asin: 'B07L95BXMB', price: '$19.99' },
-    { name: 'Book Stand Holder', asin: 'B01FYL0DRQ', price: '$22.99' },
-    { name: 'Reading Light Clip', asin: 'B00VWUX83Q', price: '$14.99' },
+    { name: 'LED Neck Reading Light', asin: 'B0C8MXXB9K', price: '$19.99' },
+    { name: 'Book Light for Reading', asin: 'B07WNRN9WQ', price: '$22.99' },
+    { name: 'Reading Light Clip', asin: 'B09NB7MCB1', price: '$14.99' },
     { name: 'Bookmark Set Metal', asin: 'B07XZPYVHT', price: '$12.99' },
     { name: 'Book Sleeve Holder', asin: 'B07VNLH3GN', price: '$16.99' }
   ],
   'reading-25to50': [
-    { name: 'Decorative Bookends', asin: 'B07ZVQGFF5', price: '$29.99' },
-    { name: 'Book Stand Adjustable', asin: 'B01FYL0DRQ', price: '$39.99' },
+    { name: 'Glocusent Upgraded Reading Light', asin: 'B09W63KBXQ', price: '$29.99' },
+    { name: 'Gritin LED Neck Light', asin: 'B0CBMKLC84', price: '$39.99' },
     { name: 'Reading Journal Leather', asin: 'B08QZ4YQKJ', price: '$34.99' },
     { name: 'Book Embosser Stamp', asin: 'B07MDHLN2X', price: '$27.99' },
     { name: 'Reading Pillow Support', asin: 'B07X7M3QTJ', price: '$44.99' }
   ],
   'reading-50to100': [
-    { name: 'Kindle Paperwhite', asin: 'B08KTZ8249', price: '$89.99' },
-    { name: 'Bookends Set of 2', asin: 'B07ZVQGFF5', price: '$69.99' },
-    { name: 'Book Light Floor Lamp', asin: 'B07L2JS5MG', price: '$79.99' },
-    { name: 'Reading Chair Cushion', asin: 'B08P3QWRVX', price: '$59.99' }
+    { name: 'Kindle Paperwhite 2024', asin: 'B0CFPJYX7P', price: '$89.99' },
+    { name: 'Book Light Floor Lamp', asin: 'B07L2JS5MG', price: '$69.99' },
+    { name: 'Reading Chair Cushion', asin: 'B08P3QWRVX', price: '$59.99' },
+    { name: 'enclize LED Reading Light', asin: 'B0BHWHM69X', price: '$79.99' }
   ],
   'reading-100to200': [
-    { name: 'Kindle Oasis', asin: 'B07L5GDTYY', price: '$179.99' },
-    { name: 'Luxury Bookshelf', asin: 'B07ZVQGFF5', price: '$149.99' },
-    { name: 'Premium Reading Chair', asin: 'B07QLPBZ75', price: '$189.99' }
+    { name: 'Kindle Paperwhite Signature', asin: 'B0CFPTK5JG', price: '$179.99' },
+    { name: 'Premium Reading Chair', asin: 'B07QLPBZ75', price: '$149.99' },
+    { name: 'Luxury Book Stand', asin: 'B01FYL0DRQ', price: '$189.99' }
   ],
   'reading-over200': [
     { name: 'Kindle Scribe', asin: 'B09BS26B8B', price: '$339.99' },
-    { name: 'Designer Bookcase', asin: 'B07ZVQGFF5', price: '$299.99' },
-    { name: 'Leather Reading Chair', asin: 'B07QLPBZ75', price: '$449.99' }
+    { name: 'Designer Reading Chair', asin: 'B07QLPBZ75', price: '$299.99' },
+    { name: 'Premium Leather Chair', asin: 'B07QLPBZ75', price: '$449.99' }
   ],
   'gaming-under25': [
-    { name: 'Gaming Mouse Pad XXL', asin: 'B071P7TRVP', price: '$19.99' },
+    { name: 'Gaming Mouse Pad XXL', asin: 'B06X19FLTC', price: '$19.99' },
     { name: 'Controller Stand', asin: 'B07VB9JWFF', price: '$14.99' },
-    { name: 'LED Gaming Lights', asin: 'B07L8R5PK6', price: '$22.99' },
+    { name: 'LED Strip Lights RGB', asin: 'B0B4NT4J28', price: '$22.99' },
     { name: 'Cable Management Clips', asin: 'B07JZQK4N1', price: '$11.99' }
   ],
   'gaming-25to50': [
@@ -274,8 +274,8 @@ const GiftFinderApp = () => {
     { name: 'Knife Sharpener Pro', asin: 'B07YVGRYC6', price: '$39.99' }
   ],
   'cooking-50to100': [
-    { name: 'Lodge Cast Iron Skillet', asin: 'B00006JSUA', price: '$54.99' },
-    { name: 'Instant Pot Duo 6 Qt', asin: 'B06Y1MP2PY', price: '$79.99' },
+    { name: 'Lodge Cast Iron Skillet 12"', asin: 'B00G2XGC88', price: '$54.99' },
+    { name: 'Instant Pot Duo 6 Qt', asin: 'B00FLYWNYQ', price: '$79.99' },
     { name: 'KitchenAid Hand Mixer', asin: 'B00005UP2P', price: '$59.99' },
     { name: 'Knife Set Professional', asin: 'B07WTVV899', price: '$89.99' }
   ],
@@ -291,18 +291,18 @@ const GiftFinderApp = () => {
   ],
   'fitness-under25': [
     { name: 'Jump Rope Speed', asin: 'B075ZKDVDQ', price: '$12.99' },
-    { name: 'Resistance Bands Set', asin: 'B07GDCJRYF', price: '$18.99' },
-    { name: 'Yoga Mat Basic', asin: 'B01LP0UD5Y', price: '$22.99' },
+    { name: 'Resistance Bands Set', asin: 'B074775QXB', price: '$18.99' },
+    { name: 'Yoga Mat Basic', asin: 'B071RM52HC', price: '$22.99' },
     { name: 'Water Bottle 32oz', asin: 'B07QLTN6CP', price: '$19.99' }
   ],
   'fitness-25to50': [
-    { name: 'Foam Roller Premium', asin: 'B00XM2MRGI', price: '$29.99' },
+    { name: 'Foam Roller TriggerPoint', asin: 'B0040EKZDY', price: '$29.99' },
     { name: 'Yoga Block 2 Pack', asin: 'B00WQWKTD4', price: '$24.99' },
-    { name: 'Exercise Mat Thick', asin: 'B01LP0UD5Y', price: '$39.99' },
+    { name: 'Exercise Mat Thick', asin: 'B071RM52HC', price: '$39.99' },
     { name: 'Gym Bag Large', asin: 'B07QLPBZ75', price: '$44.99' }
   ],
   'fitness-50to100': [
-    { name: 'Resistance Bands Heavy Duty', asin: 'B01AVDVHTI', price: '$54.99' },
+    { name: 'Resistance Bands Set of 5', asin: 'B09MJKJYLQ', price: '$54.99' },
     { name: 'Manduka PRO Yoga Mat', asin: 'B0039J8VRS', price: '$69.99' },
     { name: 'Adjustable Dumbbells 25lb', asin: 'B002AST2N2', price: '$89.99' },
     { name: 'Ab Roller Pro', asin: 'B01N1NS0GI', price: '$59.99' }
@@ -325,7 +325,7 @@ const GiftFinderApp = () => {
     { name: 'Screen Protector Pack', asin: 'B08P3LNXDC', price: '$11.99' }
   ],
   'tech-25to50': [
-    { name: 'Anker Wireless Charger', asin: 'B07DBXZZN3', price: '$29.99' },
+    { name: 'Anker Wireless Charger', asin: 'B07THHQMHM', price: '$29.99' },
     { name: 'USB Hub 7 Port', asin: 'B07L32B9C2', price: '$34.99' },
     { name: 'Laptop Sleeve 13 inch', asin: 'B01DWH45WA', price: '$24.99' },
     { name: 'Webcam Cover Set', asin: 'B08BLVZT72', price: '$19.99' }
@@ -333,7 +333,7 @@ const GiftFinderApp = () => {
   'tech-50to100': [
     { name: 'Tile Mate 4 Pack', asin: 'B09B2WLRWH', price: '$54.99' },
     { name: 'Logitech HD Webcam', asin: 'B006JH8T3S', price: '$69.99' },
-    { name: 'Blue Yeti Microphone', asin: 'B00N1YPXW2', price: '$99.99' },
+    { name: 'Blue Yeti Microphone', asin: 'B075MSG795', price: '$99.99' },
     { name: 'Mechanical Keyboard Mini', asin: 'B07ZPRYK4H', price: '$79.99' }
   ],
   'tech-100to200': [
@@ -355,13 +355,13 @@ const GiftFinderApp = () => {
     { name: 'Sunglasses Polarized', asin: 'B001VS50AM', price: '$19.99' }
   ],
   'fashion-25to50': [
-    { name: 'Fossil Leather Wallet', asin: 'B00JQXXL2A', price: '$39.99' },
+    { name: 'Fossil Leather Wallet', asin: 'B0DQ1ZC7Q1', price: '$39.99' },
     { name: 'Leather Belt Brown', asin: 'B00ZYIQVJC', price: '$29.99' },
     { name: 'Watch Display Case', asin: 'B07PGLQKD7', price: '$34.99' },
     { name: 'Designer Sunglasses', asin: 'B001VS50AM', price: '$44.99' }
   ],
   'fashion-50to100': [
-    { name: 'Timex Weekender Watch', asin: 'B000AYYIYU', price: '$64.99' },
+    { name: 'Timex Weekender Watch', asin: 'B0DFQHPJHH', price: '$64.99' },
     { name: 'Levi 501 Original Jeans', asin: 'B0018OLG9S', price: '$59.99' },
     { name: 'Leather Handbag', asin: 'B07VL82MPM', price: '$79.99' },
     { name: 'Designer Belt Leather', asin: 'B00ZYIQVJC', price: '$89.99' }
@@ -378,8 +378,8 @@ const GiftFinderApp = () => {
   ],
   'home-under25': [
     { name: 'Picture Frame Set', asin: 'B07DL2TQNB', price: '$18.99' },
-    { name: 'LED String Lights', asin: 'B01J84BS06', price: '$15.99' },
-    { name: 'Scented Candles Set', asin: 'B01MFGN8S5', price: '$22.99' },
+    { name: 'LED String Lights 100FT', asin: 'B0B4NT4J28', price: '$15.99' },
+    { name: 'Scented Candles Set', asin: 'B0D3H6H5C4', price: '$22.99' },
     { name: 'Throw Pillow Covers', asin: 'B08C7HYQB4', price: '$19.99' }
   ],
   'home-25to50': [
@@ -406,7 +406,7 @@ const GiftFinderApp = () => {
   ],
   'travel-under25': [
     { name: 'Luggage Tags 4 Pack', asin: 'B07JNTM9VC', price: '$11.99' },
-    { name: 'Travel Neck Pillow', asin: 'B00F61ZCV8', price: '$18.99' },
+    { name: 'Travel Neck Pillow 2024', asin: 'B0D6YD9ZB4', price: '$18.99' },
     { name: 'TSA Approved Locks', asin: 'B00E8CG9E0', price: '$12.99' },
     { name: 'Travel Bottles Set', asin: 'B08P3QL6DP', price: '$14.99' }
   ],
@@ -433,7 +433,7 @@ const GiftFinderApp = () => {
     { name: 'GoPro HERO11 Black', asin: 'B0B8PRWR5L', price: '$449.99' }
   ],
   'music-under25': [
-    { name: 'Guitar Picks 50 Pack', asin: 'B0002CZVMQ', price: '$9.99' },
+    { name: 'Guitar Picks Sampler', asin: 'B00DSSOVJW', price: '$9.99' },
     { name: 'Music Stand Folding', asin: 'B003VWYX2M', price: '$19.99' },
     { name: 'Guitar Strings Set', asin: 'B0002E1G5C', price: '$14.99' },
     { name: 'Instrument Cable', asin: 'B07L3Z5BW2', price: '$12.99' }
@@ -445,7 +445,7 @@ const GiftFinderApp = () => {
     { name: 'Music Sheet Folder', asin: 'B003VWYX2M', price: '$19.99' }
   ],
   'music-50to100': [
-    { name: 'JBL Flip 6 Speaker', asin: 'B096XDKNDP', price: '$79.99' },
+    { name: 'JBL Flip 6 Speaker', asin: 'B09GJVTRNZ', price: '$79.99' },
     { name: 'Audio-Technica Turntable', asin: 'B07N3X7KPX', price: '$89.99' },
     { name: 'Sony Headphones MDR', asin: 'B00HVLUR86', price: '$99.99' },
     { name: 'Microphone Stand Boom', asin: 'B07QR6Z1JB', price: '$59.99' }
@@ -462,7 +462,7 @@ const GiftFinderApp = () => {
   ],
   'art-under25': [
     { name: 'Sketch Pad 9x12', asin: 'B0027A7GCS', price: '$14.99' },
-    { name: 'Prismacolor Pencils 24', asin: 'B00PCST276', price: '$19.99' },
+    { name: 'Prismacolor Pencils 24', asin: 'B00006IEEU', price: '$19.99' },
     { name: 'Watercolor Paint Set', asin: 'B001QXGRQU', price: '$18.99' },
     { name: 'Paint Brushes Set', asin: 'B07QV6FT46', price: '$16.99' }
   ],
@@ -479,7 +479,7 @@ const GiftFinderApp = () => {
     { name: 'Canvas Roll 12 yards', asin: 'B00P1F26AM', price: '$59.99' }
   ],
   'art-100to200': [
-    { name: 'Wacom Intuos Pro', asin: 'B07S1RR3FR', price: '$149.99' },
+    { name: 'Wacom Intuos Pro Medium', asin: 'B0DFZ2ZRPQ', price: '$149.99' },
     { name: 'Professional Easel Studio', asin: 'B00B5BXVEY', price: '$179.99' },
     { name: 'Art Supply Set Deluxe', asin: 'B01N0NKDU6', price: '$149.99' }
   ],
@@ -501,15 +501,15 @@ const GiftFinderApp = () => {
     { name: 'Lens Cleaning Kit Pro', asin: 'B01M0WNBTR', price: '$24.99' }
   ],
   'photography-50to100': [
-    { name: 'Manfrotto Compact Tripod', asin: 'B00L6F16L0', price: '$79.99' },
+    { name: 'Manfrotto Compact Tripod', asin: 'B00L6F1J9Y', price: '$79.99' },
     { name: 'Neewer Ring Light', asin: 'B07T8FBZC2', price: '$69.99' },
-    { name: 'Lowepro Camera Backpack', asin: 'B002VPE1WK', price: '$89.99' },
+    { name: 'Lowepro ProTactic Backpack', asin: 'B08GP6B5RL', price: '$89.99' },
     { name: 'SD Card 128GB', asin: 'B073JYC4XM', price: '$59.99' }
   ],
   'photography-100to200': [
     { name: 'Manfrotto Tripod Pro', asin: 'B002VUZ0IG', price: '$149.99' },
-    { name: 'Godox Flash Speedlite', asin: 'B018TPQSWO', price: '$179.99' },
-    { name: 'Camera Backpack Premium', asin: 'B002VPE1WK', price: '$129.99' }
+    { name: 'Godox V860III Flash', asin: 'B09CYZWQYW', price: '$179.99' },
+    { name: 'Camera Backpack Premium', asin: 'B08GP6B5RL', price: '$129.99' }
   ],
   'photography-over200': [
     { name: 'Canon 50mm f/1.8 Lens', asin: 'B00X8MRBCW', price: '$125.00' },
@@ -545,16 +545,16 @@ const GiftFinderApp = () => {
     { name: 'Premium Massage Chair', asin: 'B07PKCGJKV', price: '$799.99' }
   ],
   'pets-under25': [
-    { name: 'KONG Classic Dog Toy', asin: 'B0002AR0II', price: '$14.99' },
+    { name: 'KONG Classic Dog Toy', asin: 'B0002AR0I8', price: '$14.99' },
     { name: 'Cat Toys Variety Pack', asin: 'B078W7P71W', price: '$19.99' },
     { name: 'Pet Grooming Brush', asin: 'B004UTLM9Y', price: '$16.99' },
     { name: 'Dog Treat Jar', asin: 'B08KQLK9ZQ', price: '$22.99' }
   ],
   'pets-25to50': [
     { name: 'Pet Bed Orthopedic', asin: 'B07NL2KRQB', price: '$39.99' },
-    { name: 'Cat Water Fountain', asin: 'B07VFHV5H4', price: '$44.99' },
+    { name: 'Cat Water Fountain', asin: 'B0CRR9WX2X', price: '$44.99' },
     { name: 'Pet Grooming Kit', asin: 'B004UTLM9Y', price: '$34.99' },
-    { name: 'Dog Leash Retractable', asin: 'B0002AR0II', price: '$29.99' }
+    { name: 'Dog Leash Retractable', asin: 'B0002AR0I8', price: '$29.99' }
   ],
   'pets-50to100': [
     { name: 'Furbo Dog Camera', asin: 'B01FXC7JWQ', price: '$79.99' },
@@ -564,27 +564,27 @@ const GiftFinderApp = () => {
   'pets-100to200': [
     { name: 'Whistle GPS Pet Tracker', asin: 'B07BQVY44F', price: '$149.99' },
     { name: 'Pet Gear Stroller', asin: 'B0009YD8NS', price: '$179.99' },
-    { name: 'Automatic Pet Feeder Pro', asin: 'B0014RQ8LW', price: '$129.99' }
+    { name: 'Furbo 360° Camera', asin: 'B09GDQZLD1', price: '$129.99' }
   ],
   'pets-over200': [
     { name: 'Litter Robot 3', asin: 'B01MU8GFQT', price: '$549.99' },
     { name: 'Pet Treadmill Dog', asin: 'B0009YD8NS', price: '$399.99' },
-    { name: 'Smart Pet Camera System', asin: 'B01FXC7JWQ', price: '$299.99' }
+    { name: 'Smart Pet Camera System', asin: 'B09GDQZLD1', price: '$299.99' }
   ],
   'outdoors-under25': [
-    { name: 'ENO SingleNest Hammock', asin: 'B001DDPHFQ', price: '$19.99' },
+    { name: 'ENO DoubleNest Hammock', asin: 'B01GTP417C', price: '$19.99' },
     { name: 'Petzl Headlamp', asin: 'B086P1CHWT', price: '$16.99' },
     { name: 'Carabiner Clip Set', asin: 'B01N301ON6', price: '$12.99' },
     { name: 'Water Purifier Tablets', asin: 'B00ENSFYH2', price: '$14.99' }
   ],
   'outdoors-25to50': [
-    { name: 'Coleman Camping Chair', asin: 'B0033DCP28', price: '$39.99' },
+    { name: 'Coleman Camping Chair', asin: 'B0CWV477YV', price: '$39.99' },
     { name: 'Black Diamond Trekking Poles', asin: 'B00TU4E5V8', price: '$44.99' },
     { name: 'Sea to Summit Dry Bag', asin: 'B00166R33S', price: '$29.99' },
-    { name: 'Camping Multi-Tool', asin: 'B0009JS6CU', price: '$34.99' }
+    { name: 'Leatherman Multi-Tool', asin: 'B079MJBP21', price: '$34.99' }
   ],
   'outdoors-50to100': [
-    { name: 'Hydro Flask 32 oz', asin: 'B084JXXJVZ', price: '$54.99' },
+    { name: 'Hydro Flask 32 oz', asin: 'B01GW2GQOI', price: '$54.99' },
     { name: 'Osprey Daylite Plus', asin: 'B00E0EW1L8', price: '$79.99' },
     { name: 'MSR Camping Stove', asin: 'B000ENSFYH2', price: '$69.99' },
     { name: 'Camping Lantern LED', asin: 'B086P1CHWT', price: '$59.99' }
@@ -600,14 +600,14 @@ const GiftFinderApp = () => {
     { name: 'Garmin GPS Handheld', asin: 'B084JXXJVZ', price: '$449.99' }
   ],
   'food-under25': [
-    { name: 'Starbucks Coffee Variety', asin: 'B078SJX37K', price: '$19.99' },
+    { name: 'Starbucks Coffee Variety', asin: 'B07L9TR38L', price: '$19.99' },
     { name: 'Hot Sauce Gift Set', asin: 'B078JTLNTN', price: '$16.99' },
     { name: 'Gourmet Popcorn Set', asin: 'B01LTHQMAG', price: '$14.99' },
     { name: 'Tea Collection Box', asin: 'B07PLQL1C2', price: '$22.99' }
   ],
   'food-25to50': [
-    { name: 'Wine Accessories Set', asin: 'B07DFKH5Y1', price: '$39.99' },
-    { name: 'Cheese Board Bamboo', asin: 'B07D3P7VHM', price: '$44.99' },
+    { name: 'Wine Accessories Set', asin: 'B08DV2BXCB', price: '$39.99' },
+    { name: 'Cheese Board Bamboo', asin: 'B0C9LDMHPJ', price: '$44.99' },
     { name: 'Olive Oil Gift Set', asin: 'B078JTLNTN', price: '$34.99' },
     { name: 'Gourmet Spice Set', asin: 'B07R8PW8KZ', price: '$29.99' }
   ],
@@ -615,11 +615,11 @@ const GiftFinderApp = () => {
     { name: 'Mr Coffee Maker', asin: 'B004164SRA', price: '$79.99' },
     { name: 'Wine Decanter Crystal', asin: 'B07DFKH5Y1', price: '$59.99' },
     { name: 'Gourmet Food Basket', asin: 'B00HUKT7ZG', price: '$89.99' },
-    { name: 'Coffee Subscription Box', asin: 'B078SJX37K', price: '$74.99' }
+    { name: 'Coffee K-Cups Variety', asin: 'B075T39QB7', price: '$74.99' }
   ],
   'food-100to200': [
     { name: 'Nespresso Machine', asin: 'B07YZVWF5P', price: '$179.99' },
-    { name: 'Wine Gift Set Premium', asin: 'B07DFKH5Y1', price: '$149.99' },
+    { name: 'Wine Gift Set Premium', asin: 'B08DV2BXCB', price: '$149.99' },
     { name: 'Meat Smoker Electric', asin: 'B004164SRA', price: '$189.99' }
   ],
   'food-over200': [
@@ -634,14 +634,14 @@ const GiftFinderApp = () => {
     { name: 'Seed Packets Variety', asin: 'B07YLP89QN', price: '$16.99' }
   ],
   'gardening-25to50': [
-    { name: 'Fiskars Pruning Shears', asin: 'B00004SD76', price: '$34.99' },
+    { name: 'Fiskars Pruning Shears', asin: 'B0002N66H', price: '$34.99' },
     { name: 'Garden Kneeler Seat', asin: 'B01KGQDBP6', price: '$39.99' },
-    { name: 'Seed Starter Trays', asin: 'B07YLP89QN', price: '$29.99' },
+    { name: 'Seed Starter Trays', asin: 'B00BRQ3QWK', price: '$29.99' },
     { name: 'Garden Hose 50ft', asin: 'B01N9FLMVQ', price: '$44.99' }
   ],
   'gardening-50to100': [
     { name: 'Raised Garden Bed Kit', asin: 'B00TFBDDQW', price: '$79.99' },
-    { name: 'Garden Tool Set Pro', asin: 'B00004SD76', price: '$89.99' },
+    { name: 'Garden Tool Set Pro', asin: 'B0BW8X2XND', price: '$89.99' },
     { name: 'Compost Bin Tumbler', asin: 'B01KGQDBP6', price: '$69.99' }
   ],
   'gardening-100to200': [
@@ -652,7 +652,7 @@ const GiftFinderApp = () => {
   'gardening-over200': [
     { name: 'Walk-In Greenhouse', asin: 'B00TFBDDQW', price: '$499.99' },
     { name: 'Garden Shed Storage', asin: 'B01KGQDBP6', price: '$799.99' },
-    { name: 'Garden Tool Storage', asin: 'B00004SD76', price: '$299.99' }
+    { name: 'Garden Tool Storage', asin: 'B0BW8X2XND', price: '$299.99' }
   ],
   'diy-under25': [
     { name: 'Screwdriver Set 6 Piece', asin: 'B00IRL3WP4', price: '$18.99' },
@@ -664,55 +664,55 @@ const GiftFinderApp = () => {
     { name: 'DEWALT Tool Set', asin: 'B00IJ0ALYS', price: '$39.99' },
     { name: 'Work Light LED Rechargeable', asin: 'B07TXP2MLT', price: '$34.99' },
     { name: 'Torpedo Level', asin: 'B00004T807', price: '$29.99' },
-    { name: 'Socket Set 42 Piece', asin: 'B00IRL3WP4', price: '$44.99' }
+    { name: 'Socket Wrench Set', asin: 'B08YRLZCPJ', price: '$44.99' }
   ],
   'diy-50to100': [
-    { name: 'Leatherman Multi-Tool', asin: 'B0009JS6CU', price: '$79.99' },
+    { name: 'Leatherman Wave+ Multi-Tool', asin: 'B079MJBP21', price: '$79.99' },
     { name: 'Tool Organizer Wall Mount', asin: 'B07MCXFG6P', price: '$59.99' },
     { name: 'Laser Level Professional', asin: 'B07MCYX7LK', price: '$89.99' },
     { name: 'Cordless Screwdriver', asin: 'B00IJ0ALYS', price: '$69.99' }
   ],
   'diy-100to200': [
-    { name: 'DEWALT Drill Combo Kit', asin: 'B00IJ0ALYS', price: '$149.99' },
+    { name: 'DEWALT Drill Combo Kit', asin: 'B0C3PQHGR7', price: '$149.99' },
     { name: 'Tool Chest Rolling', asin: 'B07MCXFG6P', price: '$179.99' },
     { name: 'Miter Saw Stand', asin: 'B00IRL3WP4', price: '$129.99' }
   ],
   'diy-over200': [
-    { name: 'DEWALT Power Tool Set', asin: 'B00IJ0ALYS', price: '$399.99' },
+    { name: 'DEWALT Power Tool Set', asin: 'B0C3PQHGR7', price: '$399.99' },
     { name: 'Husky Workbench', asin: 'B07MCXFG6P', price: '$499.99' },
     { name: 'Tool Storage System', asin: 'B07MCXFG6P', price: '$599.99' }
   ],
   'collecting-under25': [
-    { name: 'Display Case Acrylic', asin: 'B01LXY3IMH', price: '$19.99' },
-    { name: 'Coin Album Holder', asin: 'B00005MEZ1', price: '$16.99' },
+    { name: 'Display Case Acrylic', asin: 'B0CRB9D3G3', price: '$19.99' },
+    { name: 'Coin Album Holder', asin: 'B0D7V7C4V7', price: '$16.99' },
     { name: 'Trading Card Sleeves', asin: 'B07DL2TQNB', price: '$12.99' }
   ],
   'collecting-25to50': [
-    { name: 'Shadow Box Display', asin: 'B01LXY3IMH', price: '$44.99' },
+    { name: 'Shadow Box Display', asin: 'B0CRB9D3G3', price: '$44.99' },
     { name: 'Magnifying Glass LED', asin: 'B01M0WNBTR', price: '$29.99' },
-    { name: 'Coin Collection Storage', asin: 'B00005MEZ1', price: '$34.99' }
+    { name: 'Coin Collection Album', asin: 'B0B9FXF7LJ', price: '$34.99' }
   ],
   'collecting-50to100': [
-    { name: 'Display Cabinet Glass', asin: 'B01LXY3IMH', price: '$89.99' },
-    { name: 'Storage Case Organizer', asin: 'B00005MEZ1', price: '$79.99' },
+    { name: 'Display Case Magnetic', asin: 'B0CRB9D3G3', price: '$89.99' },
+    { name: 'Coin Storage Case', asin: 'B0D7V7C4V7', price: '$79.99' },
     { name: 'Collectible Display Shelf', asin: 'B07DL2TQNB', price: '$69.99' }
   ],
   'collecting-100to200': [
-    { name: 'Wall Display Cabinet', asin: 'B01LXY3IMH', price: '$179.99' },
-    { name: 'Premium Display Case', asin: 'B00005MEZ1', price: '$149.99' }
+    { name: 'Wall Display Cabinet', asin: 'B0CRB9D3G3', price: '$179.99' },
+    { name: 'Premium Display Case', asin: 'B0D7V7C4V7', price: '$149.99' }
   ],
   'collecting-over200': [
-    { name: 'Museum Display Case', asin: 'B01LXY3IMH', price: '$399.99' },
-    { name: 'Collector Safe Fireproof', asin: 'B00005MEZ1', price: '$599.99' }
+    { name: 'Museum Display Case', asin: 'B0CRB9D3G3', price: '$399.99' },
+    { name: 'Collector Safe Fireproof', asin: 'B0D7V7C4V7', price: '$599.99' }
   ],
   'movies-under25': [
     { name: 'Movie Posters Set', asin: 'B07PH1M5WS', price: '$14.99' },
-    { name: 'Popcorn Maker Machine', asin: 'B01N0NKDU6', price: '$19.99' },
+    { name: 'Popcorn Maker', asin: 'B00KL8SM92', price: '$19.99' },
     { name: 'Movie Candy Gift Box', asin: 'B00HUKT7ZG', price: '$16.99' }
   ],
   'movies-25to50': [
     { name: 'Roku Express Streaming', asin: 'B09BKCDXZC', price: '$29.99' },
-    { name: 'LED Strip Lights RGB', asin: 'B01J84BS06', price: '$34.99' },
+    { name: 'LED Strip Lights RGB', asin: 'B0B4NT4J28', price: '$34.99' },
     { name: 'Movie Snack Gift Set', asin: 'B00HUKT7ZG', price: '$39.99' }
   ],
   'movies-50to100': [
@@ -729,27 +729,27 @@ const GiftFinderApp = () => {
     { name: 'Bose Home Theater System', asin: 'B07FVK7HQ1', price: '$799.99' }
   ],
   'science-under25': [
-    { name: 'Science Experiment Kit', asin: 'B001AZ51P4', price: '$19.99' },
+    { name: 'National Geographic Chemistry Set', asin: 'B08KFND2Y1', price: '$19.99' },
     { name: 'Beginner Microscope', asin: 'B00B7D3I8E', price: '$22.99' },
-    { name: 'Chemistry Set Kids', asin: 'B001AZ51P4', price: '$24.99' }
+    { name: 'Chemistry Set Kids', asin: 'B08HSFDZP6', price: '$24.99' }
   ],
   'science-25to50': [
-    { name: 'Chemistry Lab Set', asin: 'B001AZ51P4', price: '$39.99' },
+    { name: 'Chemistry Lab Set', asin: 'B08KFND2Y1', price: '$39.99' },
     { name: 'Anatomy Model Set', asin: 'B00B7D3I8E', price: '$44.99' },
     { name: 'Science Books Collection', asin: 'B07WKX1X6F', price: '$34.99' }
   ],
   'science-50to100': [
     { name: 'Celestron Telescope', asin: 'B001TI9Y2M', price: '$79.99' },
-    { name: 'AmScope Microscope', asin: 'B00B7D3I8E', price: '$89.99' },
-    { name: 'Robotics Kit Advanced', asin: 'B001AZ51P4', price: '$99.99' }
+    { name: 'AmScope Student Microscope', asin: 'B00AM5XB5O', price: '$89.99' },
+    { name: 'Robotics Kit Advanced', asin: 'B08KFND2Y1', price: '$99.99' }
   ],
   'science-100to200': [
-    { name: 'Celestron NexStar Telescope', asin: 'B001TI9Y2M', price: '$179.99' },
-    { name: 'Professional Microscope', asin: 'B00B7D3I8E', price: '$149.99' }
+    { name: 'Celestron NexStar Telescope', asin: 'B000GUFOC8', price: '$179.99' },
+    { name: 'AmScope Binocular Microscope', asin: 'B00X4LBKZG', price: '$149.99' }
   ],
   'science-over200': [
-    { name: 'Celestron Pro Telescope', asin: 'B001TI9Y2M', price: '$499.99' },
-    { name: 'Advanced Lab Kit Complete', asin: 'B001AZ51P4', price: '$399.99' }
+    { name: 'Celestron NexStar 8SE', asin: 'B000GUFOC8', price: '$499.99' },
+    { name: 'Advanced Lab Kit Complete', asin: 'B08KFND2Y1', price: '$399.99' }
   ],
   'default': [
     { name: 'Amazon Gift Card $25', asin: 'B0CQNWSC6J', price: '$25.00' },
