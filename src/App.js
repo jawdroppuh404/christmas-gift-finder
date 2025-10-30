@@ -277,7 +277,7 @@ const GiftFinderApp = () => {
     { name: 'Lodge Cast Iron Skillet 12"', asin: 'B00G2XGC88', price: '$54.99' },
     { name: 'Instant Pot Duo 6 Qt', asin: 'B00FLYWNYQ', price: '$79.99' },
     { name: 'KitchenAid Hand Mixer', asin: 'B00005UP2P', price: '$59.99' },
-    { name: 'Knife Set Professional', asin: 'B07WTVV899', price: '$89.99' }
+    { name: 'Knife Set Professional', asin: 'B0DCZ4JPR1', price: '$89.99' }
   ],
   'cooking-100to200': [
     { name: 'Ninja Foodi Air Fryer', asin: 'B07VM1FT8Y', price: '$129.99' },
@@ -635,23 +635,23 @@ const GiftFinderApp = () => {
   ],
   'gardening-25to50': [
     { name: 'Fiskars Pruning Shears', asin: 'B0002N66H', price: '$34.99' },
-    { name: 'Garden Kneeler Seat', asin: 'B01KGQDBP6', price: '$39.99' },
+    { name: 'Modern Home Raised Bed', asin: 'B07YGZ8KWR', price: '$39.99' },
     { name: 'Seed Starter Trays', asin: 'B00BRQ3QWK', price: '$29.99' },
     { name: 'Garden Hose 50ft', asin: 'B01N9FLMVQ', price: '$44.99' }
   ],
   'gardening-50to100': [
-    { name: 'Raised Garden Bed Kit', asin: 'B00TFBDDQW', price: '$79.99' },
+    { name: 'Vego Garden Raised Bed Kit', asin: 'B099RFS9X4', price: '$79.99' },
     { name: 'Garden Tool Set Pro', asin: 'B0BW8X2XND', price: '$89.99' },
-    { name: 'Compost Bin Tumbler', asin: 'B01KGQDBP6', price: '$69.99' }
+    { name: 'Miracle-Gro Compost Tumbler', asin: 'B0785HZYFR', price: '$69.99' }
   ],
   'gardening-100to200': [
-    { name: 'Greenhouse Small', asin: 'B00TFBDDQW', price: '$179.99' },
-    { name: 'Garden Cart Utility', asin: 'B01KGQDBP6', price: '$149.99' },
-    { name: 'Rain Barrel System', asin: 'B00TFBDDQW', price: '$129.99' }
+    { name: 'Meberam Raised Garden Bed', asin: 'B0D8VXTTCK', price: '$179.99' },
+    { name: 'F2C Compost Bin 43 Gallon', asin: 'B08FD3MB66', price: '$149.99' },
+    { name: 'Lakeside Raised Garden Bed', asin: 'B01B590GMQ', price: '$129.99' }
   ],
   'gardening-over200': [
-    { name: 'Walk-In Greenhouse', asin: 'B00TFBDDQW', price: '$499.99' },
-    { name: 'Garden Shed Storage', asin: 'B01KGQDBP6', price: '$799.99' },
+    { name: 'Vego Garden Premium 9-in-1', asin: 'B099RFS9X4', price: '$499.99' },
+    { name: 'Miracle-Gro Dual Chamber', asin: 'B0785HCXB5', price: '$799.99' },
     { name: 'Garden Tool Storage', asin: 'B0BW8X2XND', price: '$299.99' }
   ],
   'diy-under25': [
