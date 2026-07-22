@@ -1,4 +1,5 @@
-import { giftCatalog, validateCatalog } from '../data/gifts';
+import { categoryDetails, giftCatalog, validateCatalog } from '../data/gifts';
+import { questions } from '../data/questions';
 import {
   ASSOCIATE_TAG,
   buildAmazonUrl,
@@ -21,7 +22,21 @@ const gamingAnswers = {
 
 test('catalog has no structural errors or duplicate ids', () => {
   expect(validateCatalog()).toEqual([]);
-  expect(giftCatalog.length).toBeGreaterThanOrEqual(50);
+  expect(giftCatalog).toHaveLength(174);
+});
+
+test('catalog categories and questionnaire preferences have meaningful coverage', () => {
+  const questionnaireValues = new Set(
+    questions.flatMap((question) => question.options?.map((option) => option.value) || []),
+  );
+
+  Object.keys(categoryDetails).forEach((category) => {
+    expect(giftCatalog.filter((item) => item.category === category).length).toBeGreaterThanOrEqual(3);
+  });
+
+  expect(
+    giftCatalog.every((item) => item.matches.some((value) => questionnaireValues.has(value))),
+  ).toBe(true);
 });
 
 test('recommendations respect budget and rank strong interests', () => {

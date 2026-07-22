@@ -140,22 +140,22 @@ const Header = () => {
     <header className="holiday-hero relative overflow-hidden rounded-[2rem] border border-emerald-300/15 bg-[#082c24] text-white shadow-2xl shadow-emerald-950/20">
       <LightStrand />
       <div className="holiday-grid" aria-hidden="true" />
-      <div className="relative grid min-h-[285px] grid-cols-[90px_1fr_90px] items-end gap-2 px-4 pb-3 pt-16 sm:grid-cols-[140px_1fr_140px] sm:px-8 lg:grid-cols-[190px_1fr_190px]">
+      <div className="relative grid min-h-[285px] grid-cols-[54px_1fr_54px] items-end gap-1 px-2 pb-3 pt-16 sm:grid-cols-[140px_1fr_140px] sm:gap-2 sm:px-8 lg:grid-cols-[190px_1fr_190px]">
         <div className="flex items-end justify-center">
           <SnowmanIllustration />
         </div>
         <div className="self-center px-1 pb-8 text-center sm:px-4">
           <div className="mb-4 inline-flex items-center gap-2 rounded-full border border-white/15 bg-white/10 px-3 py-1.5 text-[10px] font-bold uppercase tracking-[0.22em] text-emerald-100 backdrop-blur sm:text-xs">
-            <Sparkles className="h-3.5 w-3.5 text-amber-300" /> Thoughtful gifting, made simple
+            <Sparkles className="h-3.5 w-3.5 text-amber-300" /> Pick with purpose, gift with confidence
           </div>
           <h1 className="text-3xl font-black tracking-[-0.035em] text-white sm:text-5xl lg:text-6xl">
-            Find a gift that feels <span className="text-amber-300">personal.</span>
+            Pick a gift that feels <span className="text-amber-300">personal</span>
           </h1>
           <p className="mx-auto mt-4 max-w-xl text-sm leading-6 text-emerald-50/75 sm:text-base">
-            A few thoughtful questions. A focused shortlist for the person you know best.
+            Answer a few questions to help us learn more about the gift-getter
           </p>
-          <div className="mt-5 inline-flex items-center gap-2 rounded-full bg-white px-4 py-2 text-xs font-extrabold text-[#10372e] shadow-lg shadow-black/10 sm:text-sm">
-            <Gift className="h-4 w-4 text-red-600" />
+          <div className="mt-6 inline-flex items-center gap-3 rounded-2xl bg-white px-6 py-3 text-base font-black text-[#10372e] shadow-xl shadow-black/15 sm:px-8 sm:py-4 sm:text-2xl">
+            <Gift className="h-6 w-6 text-red-600 sm:h-7 sm:w-7" />
             {countdown.days === 0
               ? `Merry Christmas ${countdown.year}`
               : `${countdown.days} days until Christmas ${countdown.year}`}

@@ -1,4 +1,4 @@
-# Christmas Gift Finder
+# Christmas Gift Picker
 
 A guided questionnaire that turns details about a recipient into focused gift ideas, then opens current Amazon searches using the `jawdroppuh-20` Associates tracking ID.
 
