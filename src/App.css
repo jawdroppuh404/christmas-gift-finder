@@ -1,38 +1,132 @@
-.App {
-  text-align: center;
-}
-
-.App-logo {
-  height: 40vmin;
+.holiday-hero::after {
+  background: radial-gradient(circle at 50% 115%, rgba(240, 182, 63, 0.18), transparent 44%);
+  content: '';
+  inset: 0;
   pointer-events: none;
+  position: absolute;
 }
 
-@media (prefers-reduced-motion: no-preference) {
-  .App-logo {
-    animation: App-logo-spin infinite 20s linear;
-  }
+.holiday-grid {
+  background-image:
+    linear-gradient(rgba(255, 255, 255, 0.035) 1px, transparent 1px),
+    linear-gradient(90deg, rgba(255, 255, 255, 0.035) 1px, transparent 1px);
+  background-size: 32px 32px;
+  inset: 0;
+  mask-image: linear-gradient(to bottom, black, transparent 88%);
+  pointer-events: none;
+  position: absolute;
 }
 
-.App-header {
-  background-color: #282c34;
-  min-height: 100vh;
+.light-strand {
+  align-items: flex-start;
   display: flex;
-  flex-direction: column;
-  align-items: center;
-  justify-content: center;
-  font-size: calc(10px + 2vmin);
-  color: white;
+  height: 50px;
+  justify-content: space-around;
+  left: -10px;
+  padding: 0 8px;
+  pointer-events: none;
+  position: absolute;
+  right: -10px;
+  top: 0;
+  z-index: 5;
 }
 
-.App-link {
-  color: #61dafb;
+.light-strand::before {
+  border-bottom: 2px solid rgba(4, 20, 17, 0.78);
+  border-radius: 0 0 50% 50%;
+  content: '';
+  height: 24px;
+  left: -3%;
+  position: absolute;
+  right: -3%;
+  top: -8px;
 }
 
-@keyframes App-logo-spin {
-  from {
-    transform: rotate(0deg);
+.light-bulb {
+  animation: modern-twinkle 2.6s ease-in-out infinite;
+  border: 1px solid rgba(255, 255, 255, 0.3);
+  border-radius: 45% 45% 55% 55%;
+  display: block;
+  height: 14px;
+  margin-top: 14px;
+  position: relative;
+  transform-origin: top center;
+  width: 9px;
+}
+
+.light-bulb::before {
+  background: #1a2824;
+  border-radius: 2px 2px 0 0;
+  content: '';
+  height: 6px;
+  left: 2px;
+  position: absolute;
+  top: -6px;
+  width: 5px;
+}
+
+.light-bulb-0 {
+  background: #e85055;
+  box-shadow: 0 3px 14px rgba(232, 80, 85, 0.85);
+}
+
+.light-bulb-1 {
+  animation-delay: .35s;
+  background: #f4c453;
+  box-shadow: 0 3px 14px rgba(244, 196, 83, 0.85);
+}
+
+.light-bulb-2 {
+  animation-delay: .7s;
+  background: #4bc6a3;
+  box-shadow: 0 3px 14px rgba(75, 198, 163, 0.82);
+}
+
+.light-bulb-3 {
+  animation-delay: 1.05s;
+  background: #7aa7ee;
+  box-shadow: 0 3px 14px rgba(122, 167, 238, 0.85);
+}
+
+.holiday-character {
+  filter: drop-shadow(0 18px 18px rgba(0, 0, 0, 0.18));
+  height: auto;
+  max-height: 154px;
+  position: relative;
+  width: 100%;
+  z-index: 2;
+}
+
+@keyframes modern-twinkle {
+  0%, 100% {
+    filter: saturate(.85);
+    opacity: .48;
+    transform: scale(.88) rotate(-2deg);
   }
-  to {
-    transform: rotate(360deg);
+  45%, 60% {
+    filter: saturate(1.2);
+    opacity: 1;
+    transform: scale(1.08) rotate(2deg);
+  }
+}
+
+@media (max-width: 640px) {
+  .light-strand {
+    justify-content: space-between;
+  }
+
+  .light-bulb:nth-child(even) {
+    display: none;
+  }
+
+  .holiday-character {
+    max-height: 112px;
+  }
+}
+
+@media (prefers-reduced-motion: reduce) {
+  .light-bulb {
+    animation: none;
+    opacity: .9;
   }
 }
